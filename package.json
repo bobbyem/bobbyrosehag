@@ -4,7 +4,6 @@
   "description": "PortfolioWebsite",
   "main": "index.js",
   "dependencies": {
-    "aos": "^3.0.0-beta.6",
     "firebase": "^7.14.1"
   },
   "devDependencies": {},
