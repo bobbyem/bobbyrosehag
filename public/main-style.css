@@ -1,0 +1,291 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Consolas, sans-serif;
+    background-color: #18212d;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    margin: 0;
+}
+
+/* Ids */
+
+#main {
+    display: flex;
+    flex-flow: column;
+    width: 70%;
+    margin: 0 15%;
+    box-sizing: border-box;
+}
+
+
+#title-section {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-grow: 3;
+}
+
+#about {
+    display: none;
+    flex-flow: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+
+#projects {
+    display: none;
+    flex-flow: row;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    align-content: flex-start;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+/* Classes */
+
+.image-gallery {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.text-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.project-content {
+    background-color: white;
+    color: #18212d;
+    display: flex;
+    padding: 0px 5px;
+    flex-wrap: wrap;
+    animation: slide 0.5s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+.toggled {
+    background-color: white;
+    color: #18212d;
+    display: flex;
+}
+
+
+/* Headers and paragraphs */
+
+p {
+    font-size: 16px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Baloo Paaji 2', cursive;
+    padding:0;
+}
+
+#title {
+    font-size: 2.5rem;
+    opacity: 1;
+    animation:titleFade 1s ease-in 1;
+}
+
+#name-text {
+    color: rgb(135, 135, 253);
+    transition: 0.5s;
+    font-size: 100%;
+    cursor: pointer;
+    text-decoration: underline transparent;
+}
+
+#name-text:hover{
+    color: white;
+    font-size: 105%;
+    text-decoration: underline white;
+    
+}
+
+#subheading {
+    color: orange;
+    font-size: 100%;
+    text-decoration: underline transparent;
+}
+
+#subheading:hover {
+    color: white;
+    transition: 0.5s;
+    font-size: 105%;
+    cursor: pointer;
+    text-decoration: underline white;
+}
+
+#article-header-about {
+    color: rgb(135, 135, 253);
+    width: 100%;
+}
+
+#article-header-projects {
+    color: orange;
+    width:100%;
+}
+
+/* Images */
+
+.image-gallery img{
+    object-fit: contain;
+    width: 100%;
+}
+#secret-santa-img{
+    width: 50%;
+
+}
+
+/*Navbar main nav*/
+
+#navbar {
+    width:100vw;
+    position: fixed;
+    background-color: #151c27e8;
+    display: flex;
+    flex-wrap: wrap;
+    top: -60px;
+    transition: 0.4s top;
+}
+
+#navbar ul{
+    list-style: none;
+    flex-flow: row;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 5px;
+    font-size: small;
+}
+
+#navbar li{
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+#navbar li:hover{
+    color: white;
+}
+
+#about-link {
+    color: rgb(135, 135, 253);
+    text-decoration: underline transparent;
+}
+
+#projects-link {
+    color: orange;
+    text-decoration: underline transparent;
+}
+
+#about-link:hover, #projects-link:hover {
+    color: white;
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+/*Project Navbar */
+
+#projects-navbar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    border: 1px solid white;
+}
+
+#projects-navbar ul{
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+#projects-navbar li{
+    margin: 0 5px;
+    cursor: pointer;
+    text-decoration: overline solid transparent;
+}
+
+#projects-navbar li:hover{
+    color: rgba(255, 166, 0, 0.507);
+    transition: 0.5s;
+}
+
+
+@media screen and (max-width: 620px) {
+    #main {
+        width:90%;
+        margin: 0 5%;
+    }
+  }
+@media screen and (min-width: 1079px) {
+    #main {
+        width:50%;
+        margin: 0 25%;
+    }
+  }
+
+
+
+/* Animation */
+
+@keyframes titleFade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+
+}
+
+@keyframes grow {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

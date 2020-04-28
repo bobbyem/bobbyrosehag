@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bobby Rösehag - Kod och Kreativitet</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@400;500;600;700;800&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="main-style.css">
+        <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <nav id="navbar">
+            <ul>
+                <p></p>
+                <li id="about-link">[ Om</li>
+                <li id="projects-link">Projekt ]</li>
+            </ul>
+        </nav>
+        <div id="main">
+            
+            <div id="title-section">
+                
+                <h1 id="title">{ <span id="name-text"></span> <span id="subheading"></span> }</h1>
+
+            </div>
+
+            <div id="about">
+                
+                <div class="text-section" data-aos="fade-up">
+                    <h2 id="article-header-about">"Hello world!"</h2>
+                   
+                   
+                    <p>För cirka 15 år sedan satt jag på mitt pojkrum och skrev mina första HTML-taggar på familjens uttjänta Compaq. Jag såg med fascination hur mitt magnum opus tog form på den flimrande skärmen. Javascript, CSS - vad är det?! Jag gjorde allting "old-school" med inbakade stilar i varje minsta lilla paragraf - allt för att min Metallica-hemsida skulle bli så episk som möjligt! 
+                        <br>
+                        <br>
+                        Jag har alltid haft ett stor vilja att skapa. Varje dag kommer jag på idéer på sånt jag skulle vilja bygga; vare sig det är en app, ett spel eller varför inte ett köksbord av en gammal surfbräda?
+                        <br>
+                        <br>
+                        I dagsläget letar jag efter en spännande arbetsplats där jag bygga med nya spännande verktyg och lära mig av andra. 
+                    </p>
+                </div>
+                
+            </div>
+
+            <div id="projects">
+                <div id="project-container">
+                    <div class="article-header">
+                        <h2 id="article-header-projects">Projekt</h2>
+                    </div>
+                    
+                    <nav id="projects-navbar">
+                        <ul>
+                            
+                            <div class="toggled project-link" onclick="toggleTab(event, 'utveckling-section')">
+                                <li>Utveckling</li>
+                            </div>
+                            
+                            <div class="project-link" onclick="toggleTab(event, 'hittapp-section')">
+                                <li>hittApp</li>
+                            </div>
+                            
+                            <div class="project-link" onclick="toggleTab(event, 'santa-section')">
+                                <li>Secret Santa</li>
+                            </div>
+                            
+                            <div class="project-link" onclick="toggleTab(event, 'rgb-section')">
+                                <li>RBG-game</li>
+                            </div>
+    
+                        </ul>
+                    </nav>
+                    <div class="project-content" id="utveckling-section">
+                        <p>Det finns så mycket spännande möjligheter som koden öppnat upp och det känns ibland som att stå framför en all-you-can-eat-buffet av ramverk, algoritmer och språk - men någonstans måste man trots allt börja! 
+                            <br>
+                            <br>
+                            Med kniv och gaffel bestämde jag mig för att börja där jag slutade, med grunderna(<strong>HTML</strong>, <strong>CSS</strong> och <strong>Javascript</strong>) - vidare till <strong>Bootstrap</strong>, en kort stint <strong>jQuery</strong> men insåg snart att jag var sen till den festen och gick vidare till <strong>React-JS</strong>. 
+                        </p>
+                    </div>
+                    
+                    <div class="project-content" id="hittapp-section" style="display: none;">
+                        <p>"hittApp" är projekt jag skapat för att gräva djupare i React och testa lite backend med Google <strong>Firebase</strong>. Appen är väldigt enkel, användare kan söka efter tappade saker i databasen och lägga upp hittade objekt i den samma. 
+                            <br>
+                            <br>
+                            Jag sköter all backend med firebase; auktorisering av användare, lagring av bilder/data och hosting. Andra teknologier jag använt: <strong>CSS-modules</strong>, <strong>React Router</strong>, <strong>Context</strong> och <strong>Git</strong>.
+                        </p>
+                        <div class="image-gallery">
+                            <a href="https://hittapp-dda5d.web.app/" target="blank">
+                                <img src="img/hittapp.jpg">
+                            </a>
+                        </div>
+                        <p>Gå gärna in och ladda upp något roligt om du har tid.</p>
+                    </div>
+                    
+                    <div class="project-content" id="santa-section" style="display: none;">
+                        <p>
+                            <strong>Secret-Santa-Randomizer</strong>
+                            <br>
+                            Varje jul får jag uppdraget att dela ut secret santas i familjen, nu senast såg jag det som ett ultimat tillfälle att skapa en app för ändamålet. Det kan vara en av de fulaste apparna i världen men nu slipper jag dra lappar ur en hatt nästkommande jular.
+                        </p>
+                        <div class="image-gallery">
+                            <a href="https://bobbyem.github.io/secretsanta/index.html" target="blank">
+                                <img src="img/secretsanta3.png">
+                            </a>
+                        </div>
+                    </div>
+    
+                    <div class="project-content" id="rgb-section" style="display: none;">
+                        <p>
+                            <strong>RGB Color Guessing Game</strong>
+                            <br>
+                            Ett spel där man gissar vilken färg som anges i RGB-kod. Ett Udemy-kurs-projekt där jag lärde mig att randomisera variabler, vilket sedan blev en viktig del i min secret santa app. Har haft många vänner som blivit sittande långa stunder med spelet otroligt nog.
+                        </p>
+                        <div class="image-gallery">
+                            <a href="https://bobbyem.github.io/colorgame/color-game.html" target="blank">
+                                <img src="img/rgbgame.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
+            
+
+        </div>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="script.js" async defer></script>
+        <script src="bower_components/aos/dist/aos.js"></script>
+        <script>
+            AOS.init({
+      offset: 200,
+      duration: 600,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+          </script>
+    </body>
+</html>
